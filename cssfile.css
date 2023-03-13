@@ -1,0 +1,171 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+
+header a img {
+  height: 40px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header nav a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.explore {
+  background-color: #fff;
+  color: #111;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+/* Hero styles */
+.hero {
+  background-image: url(https://www.apple.com/v/home/ee/images/heroes/iphone-12-pro-hero-202109_5y5p5y5py5y5.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 20px 0 0 0;
+}
+.buy {
+  text-align: center;
+  display: inline-block;
+  padding: 12px 12px;
+  background-color: black;
+  border-radius: 200pc;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: .7s;
+}
+.buy:hover
+{
+  padding: 12px 12px;
+  background: linear-gradient(90deg, #0000ff, #00ffea);
+  transform: scale(1.1);
+  padding: 12px 55px;
+}
+.buy a{
+  color: white;
+}
+
+/* Category styles */
+.category {
+  padding: 50px;
+}
+
+.category h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.category p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.category ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category li {
+  flex-basis: 33%;
+  padding: 20px;
+  text-align: center;
+}
+
+.category li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*.category li a img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}*/
+.category li a img
+{
+  width: 100%;
+  height: 100%;
+  margin: 1pc;
+}
+
+.category li a h3 {
+  font-size: 24px;
+  margin: 20px 0 0 0;
+}
+
+.category li a p {
+  font-size: 18px;
+  margin: 10px;
+  color: #777;
+  margin-top: -11px;
+}

@@ -1,0 +1,96 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #161a23;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 178px;
+}
+
+/* Navigation styles */
+main .navigation {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+main .navigation span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  transform: translate(calc(14px * var(--x)), calc(14px * var(--y)));
+  transition: all 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Social media icons styles */
+main .navigation span:nth-child(1) {
+  --x: -1;
+  --y: 0;
+}
+
+main .navigation span:nth-child(2) {
+  --x: 0;
+  --y: -1;
+}
+
+main .navigation span:nth-child(3) {
+  --x: 0;
+  --y: 1;
+}
+
+main .navigation span:nth-child(4) {
+  --x: -1;
+  --y: 1;
+}
+
+main .navigation span:nth-child(5) {
+  --x: -1;
+  --y: -1;
+}
+
+main .navigation span:nth-child(6) {
+  --x: 1;
+  --y: -1;
+}
+
+/* Close button styles */
+.main .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.main .close ion-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+
+

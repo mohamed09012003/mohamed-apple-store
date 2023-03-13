@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="navigation active">
+        <span style="transform: translate(-1px, 0);">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </span>
+        <span style="transform: translate(1px, -1px);">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </span>
+        <span style="transform: translate(0, -1px);">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </span>
+        <span style="transform: translate(-1px, 1px);">
+          <ion-icon name="logo-twitch"></ion-icon>
+        </span>
+        <span style="transform: translate(-1px, -1px);">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </span>
+        <span style="transform: translate(1px, -1px);">
+          <ion-icon name="logo-discord"></ion-icon>
+        </span>
+        <span style="transform: translate(1px, 1px);">
+          <ion-icon name="logo-github"></ion-icon>
+        </span>
+        <span style="transform: translate(-1px, 1px);">
+          <ion-icon name="logo-codepen"></ion-icon>
+        </span>
+        <div class="close">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
+    <script>
+      const navigation = document.querySelector(".navigation");
+      const close = document.querySelector(".close");
+
+      navigation.onclick = function() {
+        navigation.classList.add("active");
+      };
+
+      close.onclick = function() {
+        navigation.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>
